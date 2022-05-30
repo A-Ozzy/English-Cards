@@ -1,0 +1,74 @@
+.createCard {
+   position: fixed;
+   z-index: 50;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(184, 184, 184, 0.8);
+}
+.createCard__container {
+   padding: 5px;
+   margin: 0 auto;
+   transform: translateY(30vh);
+   max-width: 400px;
+   background-color: rgba(255, 255, 240, 1);
+   border: 2px solid #6b8e23;
+   border-radius: 10px;
+}
+
+h1 {
+   padding: 5px;
+}
+
+.createCard__list{
+   max-width: 85%;
+   margin: 0 auto;
+}
+
+.createCard__item{
+   display: flex; 
+   align-items: center;
+   justify-content: flex-end;
+   margin: 10px 0;
+}
+.createCard__item span{
+   font-size: 10px;
+   margin: 3px;
+}
+input[type=text] {
+   padding: 5px;
+   border-radius: 5px;
+   border: 0.3px solid rgba(186, 186, 186, 0.71);
+   margin-left: 20px;
+   align-self:flex-end;
+ } 
+
+input[type=checkbox]{
+   margin: 0 120px 0 20px;
+}
+.createCard__item:last-child{
+   align-items: flex-start;
+   text-align: left;
+}
+ .btn{
+   margin: 5px 10px;
+   color: #444;
+   padding: 7px 10px;
+   font-size: 12px;
+   font-weight: bold;
+   border: 1px solid #aaa;
+   box-shadow: 0 1px 0 1px rgb(0 0 0 / 4%);
+   border-radius: 0.5em;
+   background-repeat: no-repeat, repeat;
+   background-position: right 0.7em top 50%, 0 0;
+   background-size: 0.65em auto, 100%;
+ }
+ .btn:hover {
+   border-color: #888;
+   background-color: #e8e8e8;
+   box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.04);
+ }
+ .btn:active{
+   background-color: #dedede;
+ }

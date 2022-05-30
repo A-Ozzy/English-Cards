@@ -1,0 +1,117 @@
+.cardBox{
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.cardBox__item {
+   margin: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 250px;
+   border: 2px solid #6b8e23;
+   border-radius: 10px;
+   padding: 10px 0;
+   background-color: #FFFFF0;
+   cursor: pointer;
+}
+.cardBox__icons{
+   display: flex;
+   min-width: 60%;
+   justify-content: space-between;
+   align-items: center;
+}
+.far{
+   font-size: 18px;
+   color: lightgray;
+}
+.far:hover{
+   color: gray;
+}
+.fa-star.favorites{
+   color: rgb(238, 235, 38);
+}
+.cardBox__item:hover{
+   box-shadow: 5px 3px 8px 2px rgba(107, 142, 35, .2);
+   transform: scale(1.01 );
+}
+.cardBox__item > div{
+   margin: 5px;
+}
+
+.cardBox__img{
+  text-align: center;
+   width: 150px;
+   height: 150px;
+
+}
+.cardBox__img img{
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+.cardBox__wordBox{
+   min-width: 150px;
+   min-height: 42px;
+   position: relative;
+   
+}
+.cardBox__word{
+   font-size: 30px;
+   margin: 0px 0px 10px 0px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   opacity: 1;
+   visibility:visible;
+   transform:translate(-50%, -50%);
+   transition: all .3s ease-in 0s;
+   pointer-events: none;
+   
+}
+.cardBox__word.hide{
+   font-size: 0;
+   opacity: 0;
+   visibility: hidden;
+   transition: all .3s ease-in 0s;
+}
+.cardBoxText{
+   width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.text{
+   transition: 3s linear;
+}
+.text.limited:hover {
+   transform: translateX(calc(-100% + var(--widthLimit)))
+ }
+
+.cardBox__question{
+   font-size: 30px;
+   margin: 0px 0px 10px 0px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   opacity: 1;
+   max-width: 90%;
+   visibility: visible;
+   transform: translate(-50%, -50%);
+   transition: all .3s ease-in 0s;
+   pointer-events: none;
+   overflow: hidden;
+}
+.cardBox__question.hide{
+   font-size: 0;
+   opacity: 0;
+   visibility: hidden;
+   transition: all .3s ease-in 0s;
+}
+.cardBox__translate{
+   font-size: 20px;
+   max-width: 90%;
+   overflow: hidden;
+}

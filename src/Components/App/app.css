@@ -1,0 +1,10 @@
+@import "../index.css";
+
+.container{
+   border-radius: 10px;
+   background-color: gainsboro;
+   max-width: 1170px;
+   margin: 0 auto;
+   padding: 10px;
+   text-align: center;
+}
